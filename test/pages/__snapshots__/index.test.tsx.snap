@@ -54,11 +54,6 @@ exports[`Home page matches snapshot 1`] = `
   <main
     class="bg-green-100 dark:bg-gray-700"
   >
-    <h2
-      class="dark:text-white"
-    >
-      Home
-    </h2>
     <button
       class="px-5 py-2 font-bold inline-flex items-center jsutify-center rounded-full text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:bg-green-600 focus:ring-green-400"
       type="button"
@@ -71,7 +66,6 @@ exports[`Home page matches snapshot 1`] = `
   >
     <small
       class="dark:text-white"
-      lang="en"
     >
       © 20xx example
     </small>

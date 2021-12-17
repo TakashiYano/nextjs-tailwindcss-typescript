@@ -54,18 +54,13 @@ exports[`About page matches snapshot 1`] = `
   <main
     class="bg-green-100 dark:bg-gray-700"
   >
-    <h2
-      class="dark:text-white"
-    >
-      About
-    </h2>
+    About
   </main>
   <footer
     class="bg-white dark:bg-gray-800"
   >
     <small
       class="dark:text-white"
-      lang="en"
     >
       © 20xx example
     </small>
