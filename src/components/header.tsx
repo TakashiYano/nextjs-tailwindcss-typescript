@@ -9,20 +9,15 @@ const items = [
 export const Header: VFC = () => {
   return (
     <header>
-      <div className="bg-white">
-        <div className="flex justify-between items-center">
-          <h1 className="text-gray-900">LOGO</h1>
-        </div>
-        <nav>
-          {items.map(({ href, label }) => {
-            return (
-              <Link key={href} href={href}>
-                <a className="p-4 inline-block">{label}</a>
-              </Link>
-            );
-          })}
-        </nav>
-      </div>
+      <nav>
+        {items.map(({ href, label }) => {
+          return (
+            <Link key={href} href={href}>
+              <a className="p-4 inline-block">{label}</a>
+            </Link>
+          );
+        })}
+      </nav>
     </header>
   );
 };
