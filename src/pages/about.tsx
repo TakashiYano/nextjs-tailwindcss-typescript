@@ -1,6 +1,7 @@
-import { Layout } from "src/components/Layout";
+import type { VFC } from "react";
+import { Layout } from "src/components/layout";
 
-const About = () => {
+const About: VFC = () => {
   return <Layout>About</Layout>;
 };
 
