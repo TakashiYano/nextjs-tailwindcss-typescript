@@ -10,7 +10,7 @@ export const Header: VFC = () => {
   return (
     <header>
       <div className="bg-white">
-        <div className="flex items-center justify-between">
+        <div className="flex justify-between items-center">
           <h1 className="text-gray-900">LOGO</h1>
         </div>
         <nav>

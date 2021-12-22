@@ -12,7 +12,6 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "prettier",
     "prettier/@typescript-eslint",
-    "plugin:tailwind/recommended"
   ],
   rules: {
     "no-console": ["error", { allow: ["warn", "info", "error"] }],
@@ -30,8 +29,8 @@ module.exports = {
         eventHandlerPrefix: "handle",
         eventHandlerPropPrefix: "on",
         checkLocalVariables: true,
-        checkInlineFunction: true
-      }
+        checkInlineFunction: true,
+      },
     ],
     "react/destructuring-assignment": ["error", "never"],
     "react-hooks/rules-of-hooks": "error",
