@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-800">
-      <small className="dark:text-white">
+    <footer className="bg-white">
+      <small>
         &copy; 20xx example
       </small>
     </footer>

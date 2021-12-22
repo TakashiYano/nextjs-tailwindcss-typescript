@@ -6,7 +6,7 @@ export const Layout = (props: { children: ReactNode }) => {
   return (
     <>
       <Header />
-      <main className="bg-green-100 dark:bg-gray-700">{props.children}</main>
+      <main className="bg-green-100">{props.children}</main>
       <Footer />
     </>
   );
