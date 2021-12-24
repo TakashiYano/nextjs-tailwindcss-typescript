@@ -1,8 +1,16 @@
-module.exports = {
+/**
+ * @types {import('next/dist/next-server/server/config').NextConfig}
+ */
+const nextConfig = {
+  rewrites: async () => {
+    return [{ source: "/", destination: "/index" }];
+  },
+  future: { strictPostcssConfiguratio: true },
   pageExtensions: ["page.tsx", "page.ts"],
-  i18n: { locales: ["ja"], defaultLocale: "ja" },
   reactStrictMode: true,
   typescript: { ignoreDevErrors: true },
   poweredByHeader: false,
   swcMinify: false,
 };
+
+module.exports = nextConfig;

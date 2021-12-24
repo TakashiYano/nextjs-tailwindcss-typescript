@@ -1,8 +1,8 @@
 import type { CustomLayout } from "next";
 
-import { Footer } from "src/pages/_Layout/Footer";
-import { Header } from "src/pages/_Layout/Header";
-import { LayoutErrorBoundary } from "src/pages/_Layout/LayoutErrorBoundary";
+import { Footer } from "src/layout/Footer";
+import { Header } from "src/layout/Header";
+import { LayoutErrorBoundary } from "src/layout/LayoutErrorBoundary";
 
 /**
  * @package
