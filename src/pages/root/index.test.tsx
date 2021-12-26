@@ -1,5 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
-import Root from "src/pages/root/i.page";
+import Root from "./index.page";
 
 describe("Root page", () => {
   it("matches snapshot", () => {
