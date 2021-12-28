@@ -6,14 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "run-p -l -c --aggregate-output lint:*",
-    "lint:eslint": "eslint --cache .",
-    "lint:prettier": "prettier --check .",
-    "fix": "run-s -l -c fix:eslint fix:prettier",
-    "fix:eslint": "yarn lint:eslint --fix",
-    "fix:prettier": "yarn lint:prettier --write",
+    "lint": "next lint",
+    "prettier": "prettier --check .",
+    "fix": "run-s -l -c fix:lint fix:prettier",
+    "fix:lint": "next lint --fix",
+    "fix:prettier": "prettier --write .",
     "unit": "jest",
-    "test": "run-p -l -c --aggregate-output lint:* unit",
+    "test": "run-p -l -c --aggregate-output lint prettier unit",
     "env": "vc env pull .env.local",
     "prepare": "husky install"
   },
@@ -64,7 +63,7 @@
     "typescript": "4.5.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "yarn fix:eslint",
+    "*.{ts,tsx}": "yarn fix:lint",
     "*": "yarn fix:prettier"
   }
 }
