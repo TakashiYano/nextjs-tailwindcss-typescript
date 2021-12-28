@@ -10,7 +10,7 @@ const createJestConfig = nextJest({ dir: "./" });
 const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   modulePathIgnorePatterns: ["<rootDir>/e2e/"],
-  moduleNameMapper: { "src/(.*)": "<rootDir>/src/$1" }, // Handle module aliases (this will be automatically configured for you soon)
+  moduleNameMapper: { "src/(.*)": "<rootDir>/src/$1" }, // Handle module aliases (this will be automatica11y configured for you soon)
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

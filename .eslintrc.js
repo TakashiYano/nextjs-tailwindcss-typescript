@@ -17,7 +17,7 @@ module.exports = {
     "prefer-const": "error",
     "func-style": ["error", "expression"],
     "arrow-body-style": ["error", "always"],
-    // "no-restricted-imports": ["error", { paths: [{ name: "react", importNames: ["default"] }] }],
+    "no-restricted-imports": ["error", { paths: [{ name: "react", importNames: ["default"] }] }],
     // react
     "react/display-name": "error",
     "react/jsx-handler-names": [
@@ -54,9 +54,9 @@ module.exports = {
         filter: { regex: "^_", match: false },
       },
     ],
-    // jsx-ally
-    "jsx-ally/no-autofocus": "off",
-    "jsx-ally/anchor-is-valid": [
+    // jsx-a11y
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/anchor-is-valid": [
       "error",
       { components: ["Link"], specialLink: ["hrefLeft", "hrefRight"], aspects: ["invalidHref", "preferButton"] },
     ],
