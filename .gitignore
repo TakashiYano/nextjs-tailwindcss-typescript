@@ -32,6 +32,3 @@ yarn-error.log*
 
 # Optional eslint cache
 .eslintcache
-
-# babel
-.babelrc
