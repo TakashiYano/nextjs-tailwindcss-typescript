@@ -8,7 +8,7 @@ type Props = LinkProps & { children: ReactElement; activeClassName: string };
  * @package
  */
 export const NavLink = (props: Props) => {
-  const { children, activeClassName, ...linkProps } = props;
+  const { activeClassName, children, ...linkProps } = props;
   const router = useRouter();
   const pathname = router.pathname === "/root" ? "/" : router.pathname;
 
