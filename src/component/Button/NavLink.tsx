@@ -17,5 +17,5 @@ export const NavLink = (props: Props) => {
       ? `${activeClassName} ${children.props.className ?? ""}`
       : children.props.className ?? "";
 
-  return <Link {...linkProps}>{cloneElement(children, { className })}</Link>;
+  return <Link {...linkProps} legacyBehavior>{cloneElement(children, { className })}</Link>;
 };
