@@ -1,4 +1,4 @@
-import { ReactNode, VFC } from "react";
+import { ReactNode, FC } from "react";
 import { ErrorBoundary, FallbackProps } from "react-error-boundary";
 
 const ErrorFallback = ({ error }: FallbackProps) => (
@@ -11,6 +11,6 @@ const ErrorFallback = ({ error }: FallbackProps) => (
 /**
  * @package
  */
-export const LayoutErrorBoundary: VFC<{ children: ReactNode }> = ({ children }) => (
+export const LayoutErrorBoundary: FC<{ children: ReactNode }> = ({ children }) => (
   <ErrorBoundary FallbackComponent={ErrorFallback}>{children}</ErrorBoundary>
 );

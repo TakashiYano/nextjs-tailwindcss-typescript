@@ -1,7 +1,7 @@
-import { VFC } from "react";
+import { FC } from "react";
 import { Button } from "src/component/Button";
 
-export const Index: VFC = () => {
+export const Index: FC = () => {
   const handleClick = () => {
     window.alert("Hello, World!");
   };
